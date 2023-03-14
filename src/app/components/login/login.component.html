@@ -1,0 +1,25 @@
+
+<app-userheading></app-userheading>
+
+<div class="container">
+<table class="table table-success table-striped-columns" style="margin-top: 20px;">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Student Name</th>
+      <th scope="col">Class</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <th scope="row">{{student.std_id}}</th>
+      <td>{{student.std_name}}</td>
+      <td>{{student.std_Class}}</td>
+      <td>{{student.std_Address}}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
